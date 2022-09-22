@@ -1,0 +1,42 @@
+.btn {
+  @include animate(background);
+  display: inline-block;
+  min-height: auto;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 10px;
+
+  @include media(">=tablet") {
+    min-height: 50px;
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
+.btn-primary {
+  background-color: $green;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-secodary {
+  background-color: #768f9c;
+
+  &:hover {
+    background-color: darken(#768f9c, 10%);
+  }
+}
+
+.btn-warning {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: darken($yellow, 10%);
+  }
+}
